@@ -56,4 +56,11 @@ async def clean_endpoint(
     return {"clean": clean(body.text)}
 
 
+@router.get("/ping")
+async def clean_endpoint(
+    data: dict = Depends(get_current_user),
+):
+    return {"id": data["key_id"]}
+
+
 app.include_router(router)
