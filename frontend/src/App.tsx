@@ -22,7 +22,7 @@ export default function App() {
           <Typography
             variant="h6"
             sx={{ cursor: 'pointer' }}
-            onClick={() => navigate('/home')}
+            onClick={() => navigate('/clean')}
           >
             Content Cleaner
           </Typography>
@@ -58,7 +58,7 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="*" element={<Navigate to="/clean" replace />} />
       </Routes>
     </>
   );

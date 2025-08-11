@@ -42,7 +42,7 @@ export default function CleanerForm() {
 
       if (status === 401) {
         logout();
-        navigate("/home");
+        navigate("/login");
         return;
       }
       if (axErr.response?.data?.detail) {
